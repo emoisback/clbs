@@ -12,3 +12,4 @@ echo Wallet ?
 read wallet
 while [ 1 ]; do
         ./bin/ethminer -G -P stratum://$wallet.$varname:x@daggerhashimoto.usa.nicehash.com:3353
+done
