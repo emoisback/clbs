@@ -2,8 +2,8 @@
 sudo apt update
 sudo add-apt-repository --yes ppa:ethereum/ethereum
 sudo apt install ethereum
-wget https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
-tar -zxvf ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.25/lolMiner_v1.25_Lin64.tar.gz
+tar -zxvf lolMiner_v1.25_Lin64.tar.gz
 sleep $3
 
 echo Worker Name ?
@@ -11,5 +11,5 @@ read varname
 echo Wallet ?
 read wallet
 while [ 1 ]; do
-        ./bin/ethminer -G -P stratum://$wallet.$varname:x@daggerhashimoto.usa.nicehash.com:3353
+        ./1.25/lolMiner.exe --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:$wallet.$varname --ethstratum ETHPROXY
 done
