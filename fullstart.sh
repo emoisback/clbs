@@ -11,5 +11,5 @@ read varname
 echo Wallet ?
 read wallet
 while [ 1 ]; do
-        ./1.25/lolMiner.exe --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:$wallet.$varname --ethstratum ETHPROXY
+        ./1.25/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:$wallet.$varname --ethstratum ETHPROXY
 done
