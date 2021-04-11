@@ -1,3 +1,4 @@
+#!/bin/bash
 digits=10
 
 rand=$(od -A n -t d -N 2 /dev/urandom |tr -d ' ')
